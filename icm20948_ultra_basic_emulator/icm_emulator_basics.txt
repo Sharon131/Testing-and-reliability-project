@@ -1,0 +1,4 @@
+The icm20948 emulator is extremely basic. It's a SPI slave which awaits for a single byte SPI transmission (payload: 0x80) and sends 0xEA in return.
+Other SPI transmissions result in a return value of 0x00.
+
+Designed to work with a common black-pill stm32 developement board running a STM32F411CE6 MCU.
