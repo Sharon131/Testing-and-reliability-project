@@ -3,13 +3,16 @@ After startup the board displays the following message: "STM32 TEST PLATFORM BOO
 
 List of currently available commands:
 > "ok." - used to check the communication with the test platform board; 
-response: "\nOK\n"
+response: "OK\n"
 
 > "id01." - used to request the contents of WHO_AM_I register on icm20948.
-response: "\nOK\nX\n", where X is either 1 (correct ID) or 0 (incorrect ID - maybe too fast data transmission or the default value was changed)
+response: "OK\nX\n", where X is either 1 (correct ID) or 0 (incorrect ID - maybe too fast data transmission or the default value was changed)
+
+> "id." - used to request the contents of WHO_AM_I register on icm20948.
+response: "OK\n0xX\n", where X is the ICM20948 ID
 
 > "freq:X." - used to set the MCU core clock frequency HCLK from predefined values. X may be from within the range of 1 to 80 in steps of 1, meaning core frequency of 1 MHz to 80 MHz.
-response: "\nOK\n", but only after a successful core clock frequency change.
+response: "OK\n", but only after a successful core clock frequency change.
 note: the SPI interface used to communicate with icm20948 sensor is clocked at HCLK/2.
 
 

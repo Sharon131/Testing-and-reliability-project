@@ -80,24 +80,24 @@ void interpret_user_input(){
 		int desired_frequency = atoi(argmnt);
 		CPU_set_freq(desired_frequency, &huart1);
 		HAL_UART_Receive_IT(&huart1, (uint8_t *)&uart_rx_char, 1);	// reset it
-		sprintf(uart_out_buffer, "\nOK\n");
+		sprintf(uart_out_buffer, "OK\n");
 		HAL_UART_Transmit(&huart1, (uint8_t *)uart_out_buffer, strlen(uart_out_buffer), 1000);
 	}
 
-//	if(strcmp(order, order_get_id) == 0){
-//		uint8_t read_id = get_icm20948_id();
-//		sprintf(uart_out_buffer, "\nOK\n0x%02x\n", read_id);
-//		HAL_UART_Transmit(&huart1, (uint8_t *)uart_out_buffer, strlen(uart_out_buffer), 1000);
-//	}
+	if(strcmp(order, order_get_id) == 0){
+		uint8_t read_id = icm20948_who_am_i_value();
+		sprintf(uart_out_buffer, "OK\n0x%02x\n", read_id);
+		HAL_UART_Transmit(&huart1, (uint8_t *)uart_out_buffer, strlen(uart_out_buffer), 1000);
+	}
 
 	if(strcmp(order, order_get_id01) == 0){
 		uint8_t result = icm20948_who_am_i();
-		sprintf(uart_out_buffer, "\nOK\n%d\n", result);
+		sprintf(uart_out_buffer, "OK\n%d\n", result);
 		HAL_UART_Transmit(&huart1, (uint8_t *)uart_out_buffer, strlen(uart_out_buffer), 1000);
 	}
 
 	if(strcmp(order, order_ok) == 0){
-		sprintf(uart_out_buffer, "\nOK\n");
+		sprintf(uart_out_buffer, "OK\n");
 		HAL_UART_Transmit(&huart1, (uint8_t *)uart_out_buffer, strlen(uart_out_buffer), 1000);
 	}
 }

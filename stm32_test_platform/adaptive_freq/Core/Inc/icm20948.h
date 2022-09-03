@@ -94,6 +94,7 @@ bool ak09916_mag_read_uT(axises* data);
 
 
 /* Sub Functions */
+uint8_t icm20948_who_am_i_value();
 bool icm20948_who_am_i();
 bool ak09916_who_am_i();
 

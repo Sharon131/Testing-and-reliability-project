@@ -139,6 +139,10 @@ bool ak09916_mag_read_uT(axises* data)
 }	
 
 
+uint8_t icm20948_who_am_i_value(){
+	return read_single_icm20948_reg(ub_0, B0_WHO_AM_I);
+}
+
 /* Sub Functions */
 bool icm20948_who_am_i()
 {
