@@ -88,3 +88,6 @@ read_bytes = ser.read_until(expected=b'\n').decode('utf-8')
 
 # print out the response
 print(f"Response:{read_bytes}\n")
+
+# close the COM port
+ser.close()
