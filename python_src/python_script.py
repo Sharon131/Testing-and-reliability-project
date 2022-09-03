@@ -87,4 +87,4 @@ response_is_correct(serial_object=ser, is_silent=False)
 read_bytes = ser.read_until(expected=b'\n').decode('utf-8')
 
 # print out the response
-print(f"Response: {read_bytes}\n")
+print(f"Response:{read_bytes}\n")
