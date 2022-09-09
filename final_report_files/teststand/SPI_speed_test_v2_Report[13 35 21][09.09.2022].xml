@@ -1,0 +1,4678 @@
+<?xml version="1.0" encoding="iso-8859-1" ?><?xml-stylesheet type="text/xsl" href="C:\Program Files\National Instruments\TestStand 2021\Components\Models\TestStandModels\ATML\StyleSheets\tr5_horizontal.xsl"?>
+
+<trc:TestResultsCollection xmlns:trc="urn:IEEE-1636.1:2011:01:TestResultsCollection" xmlns:tr="urn:IEEE-1636.1:2011:01:TestResults" xmlns:c="urn:IEEE-1671:2010:Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ts="www.ni.com/TestStand/ATMLTestResults/2.0">
+<trc:TestResults uuid="b75e5d09-3033-11ed-ae80-2cf05de48dc0" xmlns:trc="urn:IEEE-1636.1:2011:01:TestResultsCollection" xmlns:tr="urn:IEEE-1636.1:2011:01:TestResults" xmlns:c="urn:IEEE-1671:2010:Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ts="www.ni.com/TestStand/ATMLTestResults/2.0">
+	<tr:Personnel>
+		<tr:SystemOperator ID = "administrator" name = "administrator"/>
+	</tr:Personnel>
+	<tr:ResultSet ID="7509" name = "E:\githuby\TIN\Testing-and-reliability-project\teststand\SPI_speed_test_v2.seq#MainSequence" startDateTime = "2022-09-09T13:35:21.645" endDateTime = "2022-09-09T13:37:00.468">
+		<tr:Extension>
+			<ts:TSStepProperties>
+				<ts:StepType>SequenceCall</ts:StepType>
+				<ts:StepGroup>Main</ts:StepGroup>
+				<ts:BlockLevel value='1'/>
+				<ts:StepCausedSequenceFailure value='true'/>
+				<ts:Index value='10'/>
+				<ts:TotalTime value='98.8232'/>
+				<ts:ModuleTime value='98.8231'/>
+			</ts:TSStepProperties>
+		</tr:Extension>
+		<tr:Outcome value="Failed" />
+		<tr:SessionAction ID = "7510" name = "Get COM port number" startDateTime = "2022-09-09T13:35:21.723"  endDateTime = "2022-09-09T13:35:23.840"  testReferenceID="ID#:kdvmc8Eu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>PORT:COM3
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "COM_PORT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>COM3</c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Setup</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='2.1166'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7511" name = "Found COM port" startDateTime = "2022-09-09T13:35:23.845"  endDateTime = "2022-09-09T13:35:23.845"  testReferenceID="ID#:dTJCgCAw7RGugCzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Setup</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='4.96e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:SessionAction ID = "7512" name = "Get min frequency" startDateTime = "2022-09-09T13:35:23.855"  endDateTime = "2022-09-09T13:35:50.193"  testReferenceID="ID#:nkDZVuwu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ButtonHit">
+						<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Response">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>1</c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>MessagePopup</ts:StepType>
+					<ts:StepGroup>Setup</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='26.3383'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7513" name = "Get max frequency" startDateTime = "2022-09-09T13:35:50.196"  endDateTime = "2022-09-09T13:36:08.920"  testReferenceID="ID#:q19fMO4u7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ButtonHit">
+						<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Response">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>40</c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>MessagePopup</ts:StepType>
+					<ts:StepGroup>Setup</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='18.7233'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7514" name = "Get frequency step" startDateTime = "2022-09-09T13:36:08.923"  endDateTime = "2022-09-09T13:36:14.784"  testReferenceID="ID#:rF9fMO4u7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ButtonHit">
+						<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Response">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>1</c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>MessagePopup</ts:StepType>
+					<ts:StepGroup>Setup</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='7'/>
+					<ts:TotalTime value='5.861'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7515" name = "Check input data range" startDateTime = "2022-09-09T13:36:14.789"  endDateTime = "2022-09-09T13:36:14.790"  testReferenceID="ID#:F1sY5h0w7RGugCzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_MultipleNumericLimitTest</ts:StepType>
+					<ts:StepGroup>Setup</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='8'/>
+					<ts:TotalTime value='0.0002102'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cdd-3033-11ed-ae80-2cf05de48dc0" name = "MIN_F in range">
+				<tr:TestData>
+					<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x0400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum value = "80" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+						<c:Extension>
+							<ts:TSLimitProperties>
+								<ts:RawLimits>
+									<ts:Nominal value = "100" xsi:type="c:double" />
+									<ts:Low value = "1" xsi:type="c:double" />
+									<ts:High value = "80" xsi:type="c:double" />
+								</ts:RawLimits>
+							</ts:TSLimitProperties>
+						</c:Extension>
+					</tr:Limits>
+				</tr:TestLimits>
+				<tr:Outcome value = "Passed" />
+			</tr:TestResult>
+			<tr:TestResult ID = "tr-b75e5cde-3033-11ed-ae80-2cf05de48dc0" name = "MAX_F in range">
+				<tr:TestData>
+					<c:Datum value = "40" xsi:type="ts:TS_double" flags = "0x0400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum value = "80" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+						<c:Extension>
+							<ts:TSLimitProperties>
+								<ts:RawLimits>
+									<ts:Nominal value = "100" xsi:type="c:double" />
+									<ts:Low value = "1" xsi:type="c:double" />
+									<ts:High value = "80" xsi:type="c:double" />
+								</ts:RawLimits>
+							</ts:TSLimitProperties>
+						</c:Extension>
+					</tr:Limits>
+				</tr:TestLimits>
+				<tr:Outcome value = "Passed" />
+			</tr:TestResult>
+			<tr:TestResult ID = "tr-b75e5cdf-3033-11ed-ae80-2cf05de48dc0" name = "STEP_F in range">
+				<tr:TestData>
+					<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x0400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum value = "80" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+						<c:Extension>
+							<ts:TSLimitProperties>
+								<ts:RawLimits>
+									<ts:Nominal value = "100" xsi:type="c:double" />
+									<ts:Low value = "1" xsi:type="c:double" />
+									<ts:High value = "80" xsi:type="c:double" />
+								</ts:RawLimits>
+							</ts:TSLimitProperties>
+						</c:Extension>
+					</tr:Limits>
+				</tr:TestLimits>
+				<tr:Outcome value = "Passed" />
+			</tr:TestResult>
+			<tr:TestResult ID = "tr-b75e5ce0-3033-11ed-ae80-2cf05de48dc0" name = "MIN_F &lt;= MAX_F">
+				<tr:TestData>
+					<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x0400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:SingleLimit comparator = "LE">
+							<c:Datum value = "40" xsi:type="ts:TS_double" flags = "0x0000"/>
+						</c:SingleLimit>
+					</tr:Limits>
+				</tr:TestLimits>
+				<tr:Outcome value = "Passed" />
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7516" name = "Set starting frequency" startDateTime = "2022-09-09T13:36:14.799"  endDateTime = "2022-09-09T13:36:14.799"  testReferenceID="ID#:DthmJvAu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Setup</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='12'/>
+					<ts:TotalTime value='1.47e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7517" name = "While" startDateTime = "2022-09-09T13:36:14.808"  endDateTime = "2022-09-09T13:36:14.808"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='8.95e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7518" name = "Get ID" startDateTime = "2022-09-09T13:36:14.810"  endDateTime = "2022-09-09T13:36:15.927"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "1" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.11729'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7519" name = "Read ID" startDateTime = "2022-09-09T13:36:15.939"  endDateTime = "2022-09-09T13:36:15.939"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='4.01e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7520" name = "Compare return value" startDateTime = "2022-09-09T13:36:15.942"  endDateTime = "2022-09-09T13:36:15.942"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.17e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5ce1-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7521" name = "While" startDateTime = "2022-09-09T13:36:15.959"  endDateTime = "2022-09-09T13:36:15.960"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='8.22e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7522" name = "Get ID" startDateTime = "2022-09-09T13:36:15.965"  endDateTime = "2022-09-09T13:36:17.072"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "2" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10755'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7523" name = "Read ID" startDateTime = "2022-09-09T13:36:17.085"  endDateTime = "2022-09-09T13:36:17.085"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.38e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7524" name = "Compare return value" startDateTime = "2022-09-09T13:36:17.088"  endDateTime = "2022-09-09T13:36:17.088"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.14e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5ce2-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7525" name = "While" startDateTime = "2022-09-09T13:36:17.104"  endDateTime = "2022-09-09T13:36:17.104"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.05e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7526" name = "Get ID" startDateTime = "2022-09-09T13:36:17.108"  endDateTime = "2022-09-09T13:36:18.211"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "3" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10273'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7527" name = "Read ID" startDateTime = "2022-09-09T13:36:18.222"  endDateTime = "2022-09-09T13:36:18.222"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.45e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7528" name = "Compare return value" startDateTime = "2022-09-09T13:36:18.225"  endDateTime = "2022-09-09T13:36:18.225"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='3.56e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5ce3-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7529" name = "While" startDateTime = "2022-09-09T13:36:18.239"  endDateTime = "2022-09-09T13:36:18.239"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.92e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7530" name = "Get ID" startDateTime = "2022-09-09T13:36:18.244"  endDateTime = "2022-09-09T13:36:19.346"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "4" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10202'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7531" name = "Read ID" startDateTime = "2022-09-09T13:36:19.357"  endDateTime = "2022-09-09T13:36:19.357"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='5.62e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7532" name = "Compare return value" startDateTime = "2022-09-09T13:36:19.360"  endDateTime = "2022-09-09T13:36:19.360"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='3.99e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5ce4-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7533" name = "While" startDateTime = "2022-09-09T13:36:19.378"  endDateTime = "2022-09-09T13:36:19.378"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='8.09e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7534" name = "Get ID" startDateTime = "2022-09-09T13:36:19.383"  endDateTime = "2022-09-09T13:36:20.482"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "5" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09907'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7535" name = "Read ID" startDateTime = "2022-09-09T13:36:20.495"  endDateTime = "2022-09-09T13:36:20.495"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.63e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7536" name = "Compare return value" startDateTime = "2022-09-09T13:36:20.497"  endDateTime = "2022-09-09T13:36:20.497"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='3.79e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5ce5-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7537" name = "While" startDateTime = "2022-09-09T13:36:20.513"  endDateTime = "2022-09-09T13:36:20.513"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.78e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7538" name = "Get ID" startDateTime = "2022-09-09T13:36:20.519"  endDateTime = "2022-09-09T13:36:21.624"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "6" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10517'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7539" name = "Read ID" startDateTime = "2022-09-09T13:36:21.637"  endDateTime = "2022-09-09T13:36:21.637"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.75e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7540" name = "Compare return value" startDateTime = "2022-09-09T13:36:21.640"  endDateTime = "2022-09-09T13:36:21.640"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.78e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5ce6-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7541" name = "While" startDateTime = "2022-09-09T13:36:21.655"  endDateTime = "2022-09-09T13:36:21.655"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.87e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7542" name = "Get ID" startDateTime = "2022-09-09T13:36:21.660"  endDateTime = "2022-09-09T13:36:22.759"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "7" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09916'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7543" name = "Read ID" startDateTime = "2022-09-09T13:36:22.771"  endDateTime = "2022-09-09T13:36:22.771"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='4.25e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7544" name = "Compare return value" startDateTime = "2022-09-09T13:36:22.775"  endDateTime = "2022-09-09T13:36:22.775"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.54e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5ce7-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7545" name = "While" startDateTime = "2022-09-09T13:36:22.790"  endDateTime = "2022-09-09T13:36:22.790"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='9.05e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7546" name = "Get ID" startDateTime = "2022-09-09T13:36:22.795"  endDateTime = "2022-09-09T13:36:23.898"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "8" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10327'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7547" name = "Read ID" startDateTime = "2022-09-09T13:36:23.910"  endDateTime = "2022-09-09T13:36:23.910"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='4.33e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7548" name = "Compare return value" startDateTime = "2022-09-09T13:36:23.914"  endDateTime = "2022-09-09T13:36:23.914"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.48e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5ce8-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7549" name = "While" startDateTime = "2022-09-09T13:36:23.930"  endDateTime = "2022-09-09T13:36:23.930"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='6.83e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7550" name = "Get ID" startDateTime = "2022-09-09T13:36:23.935"  endDateTime = "2022-09-09T13:36:25.037"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "9" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10172'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7551" name = "Read ID" startDateTime = "2022-09-09T13:36:25.064"  endDateTime = "2022-09-09T13:36:25.064"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='4.02e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7552" name = "Compare return value" startDateTime = "2022-09-09T13:36:25.068"  endDateTime = "2022-09-09T13:36:25.068"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.71e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5ce9-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7553" name = "While" startDateTime = "2022-09-09T13:36:25.123"  endDateTime = "2022-09-09T13:36:25.123"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='7.02e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7554" name = "Get ID" startDateTime = "2022-09-09T13:36:25.138"  endDateTime = "2022-09-09T13:36:26.240"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "10" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10241'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7555" name = "Read ID" startDateTime = "2022-09-09T13:36:26.267"  endDateTime = "2022-09-09T13:36:26.267"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.28e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7556" name = "Compare return value" startDateTime = "2022-09-09T13:36:26.269"  endDateTime = "2022-09-09T13:36:26.269"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='3.72e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cea-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7557" name = "While" startDateTime = "2022-09-09T13:36:26.287"  endDateTime = "2022-09-09T13:36:26.287"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='9.21e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7558" name = "Get ID" startDateTime = "2022-09-09T13:36:26.293"  endDateTime = "2022-09-09T13:36:27.403"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "11" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.1106'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7559" name = "Read ID" startDateTime = "2022-09-09T13:36:27.414"  endDateTime = "2022-09-09T13:36:27.414"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.64e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7560" name = "Compare return value" startDateTime = "2022-09-09T13:36:27.417"  endDateTime = "2022-09-09T13:36:27.417"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.11e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5ceb-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7561" name = "While" startDateTime = "2022-09-09T13:36:27.432"  endDateTime = "2022-09-09T13:36:27.432"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.58e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7562" name = "Get ID" startDateTime = "2022-09-09T13:36:27.437"  endDateTime = "2022-09-09T13:36:28.540"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "12" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10355'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7563" name = "Read ID" startDateTime = "2022-09-09T13:36:28.554"  endDateTime = "2022-09-09T13:36:28.554"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.42e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7564" name = "Compare return value" startDateTime = "2022-09-09T13:36:28.557"  endDateTime = "2022-09-09T13:36:28.557"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.74e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cec-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7565" name = "While" startDateTime = "2022-09-09T13:36:28.575"  endDateTime = "2022-09-09T13:36:28.575"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='7.78e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7566" name = "Get ID" startDateTime = "2022-09-09T13:36:28.580"  endDateTime = "2022-09-09T13:36:29.678"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "13" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09838'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7567" name = "Read ID" startDateTime = "2022-09-09T13:36:29.689"  endDateTime = "2022-09-09T13:36:29.689"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.58e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7568" name = "Compare return value" startDateTime = "2022-09-09T13:36:29.692"  endDateTime = "2022-09-09T13:36:29.692"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.67e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5ced-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7569" name = "While" startDateTime = "2022-09-09T13:36:29.708"  endDateTime = "2022-09-09T13:36:29.708"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='6.32e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7570" name = "Get ID" startDateTime = "2022-09-09T13:36:29.713"  endDateTime = "2022-09-09T13:36:30.820"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "14" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.1073'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7571" name = "Read ID" startDateTime = "2022-09-09T13:36:30.847"  endDateTime = "2022-09-09T13:36:30.847"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.93e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7572" name = "Compare return value" startDateTime = "2022-09-09T13:36:30.849"  endDateTime = "2022-09-09T13:36:30.849"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='3.88e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cee-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7573" name = "While" startDateTime = "2022-09-09T13:36:30.866"  endDateTime = "2022-09-09T13:36:30.866"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='4.84e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7574" name = "Get ID" startDateTime = "2022-09-09T13:36:30.876"  endDateTime = "2022-09-09T13:36:31.981"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "15" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10472'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7575" name = "Read ID" startDateTime = "2022-09-09T13:36:31.992"  endDateTime = "2022-09-09T13:36:31.992"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.99e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7576" name = "Compare return value" startDateTime = "2022-09-09T13:36:31.995"  endDateTime = "2022-09-09T13:36:31.995"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='3.6e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cef-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7577" name = "While" startDateTime = "2022-09-09T13:36:32.012"  endDateTime = "2022-09-09T13:36:32.012"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='6.67e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7578" name = "Get ID" startDateTime = "2022-09-09T13:36:32.017"  endDateTime = "2022-09-09T13:36:33.113"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "16" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09591'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7579" name = "Read ID" startDateTime = "2022-09-09T13:36:33.124"  endDateTime = "2022-09-09T13:36:33.124"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.56e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7580" name = "Compare return value" startDateTime = "2022-09-09T13:36:33.128"  endDateTime = "2022-09-09T13:36:33.128"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.56e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cf0-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7581" name = "While" startDateTime = "2022-09-09T13:36:33.143"  endDateTime = "2022-09-09T13:36:33.144"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='6.15e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7582" name = "Get ID" startDateTime = "2022-09-09T13:36:33.148"  endDateTime = "2022-09-09T13:36:34.249"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "17" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10156'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7583" name = "Read ID" startDateTime = "2022-09-09T13:36:34.261"  endDateTime = "2022-09-09T13:36:34.261"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='4.11e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7584" name = "Compare return value" startDateTime = "2022-09-09T13:36:34.263"  endDateTime = "2022-09-09T13:36:34.263"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='3.58e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cf1-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7585" name = "While" startDateTime = "2022-09-09T13:36:34.280"  endDateTime = "2022-09-09T13:36:34.280"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='0.0001134'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7586" name = "Get ID" startDateTime = "2022-09-09T13:36:34.285"  endDateTime = "2022-09-09T13:36:35.386"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "18" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10099'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7587" name = "Read ID" startDateTime = "2022-09-09T13:36:35.397"  endDateTime = "2022-09-09T13:36:35.397"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.14e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7588" name = "Compare return value" startDateTime = "2022-09-09T13:36:35.400"  endDateTime = "2022-09-09T13:36:35.400"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='3.48e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cf2-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7589" name = "While" startDateTime = "2022-09-09T13:36:35.417"  endDateTime = "2022-09-09T13:36:35.417"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.82e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7590" name = "Get ID" startDateTime = "2022-09-09T13:36:35.421"  endDateTime = "2022-09-09T13:36:36.523"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "19" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10139'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7591" name = "Read ID" startDateTime = "2022-09-09T13:36:36.534"  endDateTime = "2022-09-09T13:36:36.534"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.59e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7592" name = "Compare return value" startDateTime = "2022-09-09T13:36:36.538"  endDateTime = "2022-09-09T13:36:36.538"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.15e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cf3-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7593" name = "While" startDateTime = "2022-09-09T13:36:36.554"  endDateTime = "2022-09-09T13:36:36.554"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.21e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7594" name = "Get ID" startDateTime = "2022-09-09T13:36:36.559"  endDateTime = "2022-09-09T13:36:37.665"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "20" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10681'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7595" name = "Read ID" startDateTime = "2022-09-09T13:36:37.676"  endDateTime = "2022-09-09T13:36:37.676"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.18e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7596" name = "Compare return value" startDateTime = "2022-09-09T13:36:37.679"  endDateTime = "2022-09-09T13:36:37.679"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='3.54e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cf4-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7597" name = "While" startDateTime = "2022-09-09T13:36:37.694"  endDateTime = "2022-09-09T13:36:37.694"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.31e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7598" name = "Get ID" startDateTime = "2022-09-09T13:36:37.699"  endDateTime = "2022-09-09T13:36:38.798"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "21" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09925'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7599" name = "Read ID" startDateTime = "2022-09-09T13:36:38.827"  endDateTime = "2022-09-09T13:36:38.827"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='4.42e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7600" name = "Compare return value" startDateTime = "2022-09-09T13:36:38.831"  endDateTime = "2022-09-09T13:36:38.831"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='5.99e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cf5-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7601" name = "While" startDateTime = "2022-09-09T13:36:38.846"  endDateTime = "2022-09-09T13:36:38.846"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='4.91e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7602" name = "Get ID" startDateTime = "2022-09-09T13:36:38.851"  endDateTime = "2022-09-09T13:36:39.946"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "22" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09533'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7603" name = "Read ID" startDateTime = "2022-09-09T13:36:39.958"  endDateTime = "2022-09-09T13:36:39.958"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.77e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7604" name = "Compare return value" startDateTime = "2022-09-09T13:36:39.962"  endDateTime = "2022-09-09T13:36:39.962"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.22e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cf6-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7605" name = "While" startDateTime = "2022-09-09T13:36:39.977"  endDateTime = "2022-09-09T13:36:39.977"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.81e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7606" name = "Get ID" startDateTime = "2022-09-09T13:36:39.982"  endDateTime = "2022-09-09T13:36:41.085"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "23" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10312'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7607" name = "Read ID" startDateTime = "2022-09-09T13:36:41.096"  endDateTime = "2022-09-09T13:36:41.097"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.53e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7608" name = "Compare return value" startDateTime = "2022-09-09T13:36:41.099"  endDateTime = "2022-09-09T13:36:41.099"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.39e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cf7-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7609" name = "While" startDateTime = "2022-09-09T13:36:41.114"  endDateTime = "2022-09-09T13:36:41.114"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.11e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7610" name = "Get ID" startDateTime = "2022-09-09T13:36:41.118"  endDateTime = "2022-09-09T13:36:42.218"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "24" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09974'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7611" name = "Read ID" startDateTime = "2022-09-09T13:36:42.229"  endDateTime = "2022-09-09T13:36:42.229"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.23e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7612" name = "Compare return value" startDateTime = "2022-09-09T13:36:42.232"  endDateTime = "2022-09-09T13:36:42.232"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.53e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cf8-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7613" name = "While" startDateTime = "2022-09-09T13:36:42.248"  endDateTime = "2022-09-09T13:36:42.248"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.81e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7614" name = "Get ID" startDateTime = "2022-09-09T13:36:42.253"  endDateTime = "2022-09-09T13:36:43.362"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "25" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10887'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7615" name = "Read ID" startDateTime = "2022-09-09T13:36:43.373"  endDateTime = "2022-09-09T13:36:43.373"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='4.08e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7616" name = "Compare return value" startDateTime = "2022-09-09T13:36:43.376"  endDateTime = "2022-09-09T13:36:43.376"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='3.84e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cf9-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7617" name = "While" startDateTime = "2022-09-09T13:36:43.391"  endDateTime = "2022-09-09T13:36:43.391"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='8.07e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7618" name = "Get ID" startDateTime = "2022-09-09T13:36:43.396"  endDateTime = "2022-09-09T13:36:44.500"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "26" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10405'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7619" name = "Read ID" startDateTime = "2022-09-09T13:36:44.511"  endDateTime = "2022-09-09T13:36:44.511"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='4.11e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7620" name = "Compare return value" startDateTime = "2022-09-09T13:36:44.515"  endDateTime = "2022-09-09T13:36:44.515"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.01e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cfa-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7621" name = "While" startDateTime = "2022-09-09T13:36:44.533"  endDateTime = "2022-09-09T13:36:44.533"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='9.57e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7622" name = "Get ID" startDateTime = "2022-09-09T13:36:44.538"  endDateTime = "2022-09-09T13:36:45.643"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "27" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10467'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7623" name = "Read ID" startDateTime = "2022-09-09T13:36:45.654"  endDateTime = "2022-09-09T13:36:45.654"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.34e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7624" name = "Compare return value" startDateTime = "2022-09-09T13:36:45.657"  endDateTime = "2022-09-09T13:36:45.657"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.84e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cfb-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7625" name = "While" startDateTime = "2022-09-09T13:36:45.671"  endDateTime = "2022-09-09T13:36:45.671"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='6.27e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7626" name = "Get ID" startDateTime = "2022-09-09T13:36:45.676"  endDateTime = "2022-09-09T13:36:46.777"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "28" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10138'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7627" name = "Read ID" startDateTime = "2022-09-09T13:36:46.789"  endDateTime = "2022-09-09T13:36:46.789"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.86e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7628" name = "Compare return value" startDateTime = "2022-09-09T13:36:46.793"  endDateTime = "2022-09-09T13:36:46.793"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='6.59e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cfc-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7629" name = "While" startDateTime = "2022-09-09T13:36:46.811"  endDateTime = "2022-09-09T13:36:46.811"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='6.78e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7630" name = "Get ID" startDateTime = "2022-09-09T13:36:46.815"  endDateTime = "2022-09-09T13:36:47.910"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "29" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09499'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7631" name = "Read ID" startDateTime = "2022-09-09T13:36:47.921"  endDateTime = "2022-09-09T13:36:47.921"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.39e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7632" name = "Compare return value" startDateTime = "2022-09-09T13:36:47.924"  endDateTime = "2022-09-09T13:36:47.924"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.55e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cfd-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7633" name = "While" startDateTime = "2022-09-09T13:36:47.939"  endDateTime = "2022-09-09T13:36:47.939"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.69e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7634" name = "Get ID" startDateTime = "2022-09-09T13:36:47.944"  endDateTime = "2022-09-09T13:36:49.044"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "30" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10063'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7635" name = "Read ID" startDateTime = "2022-09-09T13:36:49.055"  endDateTime = "2022-09-09T13:36:49.055"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.16e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7636" name = "Compare return value" startDateTime = "2022-09-09T13:36:49.058"  endDateTime = "2022-09-09T13:36:49.058"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.45e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cfe-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7637" name = "While" startDateTime = "2022-09-09T13:36:49.074"  endDateTime = "2022-09-09T13:36:49.074"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='7.91e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7638" name = "Get ID" startDateTime = "2022-09-09T13:36:49.079"  endDateTime = "2022-09-09T13:36:50.183"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "31" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10426'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7639" name = "Read ID" startDateTime = "2022-09-09T13:36:50.195"  endDateTime = "2022-09-09T13:36:50.195"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.45e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7640" name = "Compare return value" startDateTime = "2022-09-09T13:36:50.198"  endDateTime = "2022-09-09T13:36:50.198"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='3.83e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5cff-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7641" name = "While" startDateTime = "2022-09-09T13:36:50.215"  endDateTime = "2022-09-09T13:36:50.215"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='5.95e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7642" name = "Get ID" startDateTime = "2022-09-09T13:36:50.219"  endDateTime = "2022-09-09T13:36:51.316"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "32" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09739'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7643" name = "Read ID" startDateTime = "2022-09-09T13:36:51.329"  endDateTime = "2022-09-09T13:36:51.329"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.58e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7644" name = "Compare return value" startDateTime = "2022-09-09T13:36:51.332"  endDateTime = "2022-09-09T13:36:51.332"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='5.06e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5d00-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7645" name = "While" startDateTime = "2022-09-09T13:36:51.348"  endDateTime = "2022-09-09T13:36:51.348"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='4.74e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7646" name = "Get ID" startDateTime = "2022-09-09T13:36:51.353"  endDateTime = "2022-09-09T13:36:52.445"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "33" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09277'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7647" name = "Read ID" startDateTime = "2022-09-09T13:36:52.457"  endDateTime = "2022-09-09T13:36:52.457"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='4.61e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7648" name = "Compare return value" startDateTime = "2022-09-09T13:36:52.461"  endDateTime = "2022-09-09T13:36:52.461"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.02e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5d01-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7649" name = "While" startDateTime = "2022-09-09T13:36:52.477"  endDateTime = "2022-09-09T13:36:52.477"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='4.79e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7650" name = "Get ID" startDateTime = "2022-09-09T13:36:52.481"  endDateTime = "2022-09-09T13:36:53.577"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "34" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09571'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7651" name = "Read ID" startDateTime = "2022-09-09T13:36:53.588"  endDateTime = "2022-09-09T13:36:53.588"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.95e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7652" name = "Compare return value" startDateTime = "2022-09-09T13:36:53.591"  endDateTime = "2022-09-09T13:36:53.591"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='5.38e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5d02-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7653" name = "While" startDateTime = "2022-09-09T13:36:53.605"  endDateTime = "2022-09-09T13:36:53.605"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='4.63e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7654" name = "Get ID" startDateTime = "2022-09-09T13:36:53.610"  endDateTime = "2022-09-09T13:36:54.706"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "35" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09628'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7655" name = "Read ID" startDateTime = "2022-09-09T13:36:54.719"  endDateTime = "2022-09-09T13:36:54.719"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.97e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7656" name = "Compare return value" startDateTime = "2022-09-09T13:36:54.724"  endDateTime = "2022-09-09T13:36:54.724"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='6.02e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5d03-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7657" name = "While" startDateTime = "2022-09-09T13:36:54.741"  endDateTime = "2022-09-09T13:36:54.741"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='6.53e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7658" name = "Get ID" startDateTime = "2022-09-09T13:36:54.745"  endDateTime = "2022-09-09T13:36:55.841"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0xea
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "36" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09594'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7659" name = "Read ID" startDateTime = "2022-09-09T13:36:55.852"  endDateTime = "2022-09-09T13:36:55.852"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.8e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7660" name = "Compare return value" startDateTime = "2022-09-09T13:36:55.855"  endDateTime = "2022-09-09T13:36:55.855"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.51e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr-b75e5d04-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0xea</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7661" name = "While" startDateTime = "2022-09-09T13:36:55.872"  endDateTime = "2022-09-09T13:36:55.873"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='6e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7662" name = "Get ID" startDateTime = "2022-09-09T13:36:55.877"  endDateTime = "2022-09-09T13:36:56.975"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0x74
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0x74
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "37" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09755'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7663" name = "Read ID" startDateTime = "2022-09-09T13:36:56.985"  endDateTime = "2022-09-09T13:36:56.986"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.21e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7664" name = "Compare return value" startDateTime = "2022-09-09T13:36:56.988"  endDateTime = "2022-09-09T13:36:56.988"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:StepCausedSequenceFailure value='true'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.18e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Failed" />
+			<tr:TestResult ID = "tr-b75e5d05-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0x74</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7665" name = "While" startDateTime = "2022-09-09T13:36:57.008"  endDateTime = "2022-09-09T13:36:57.008"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='6.31e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7666" name = "Get ID" startDateTime = "2022-09-09T13:36:57.013"  endDateTime = "2022-09-09T13:36:58.112"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0x74
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0x74
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "38" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09943'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7667" name = "Read ID" startDateTime = "2022-09-09T13:36:58.138"  endDateTime = "2022-09-09T13:36:58.138"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='4.13e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7668" name = "Compare return value" startDateTime = "2022-09-09T13:36:58.141"  endDateTime = "2022-09-09T13:36:58.141"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.88e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Failed" />
+			<tr:TestResult ID = "tr-b75e5d06-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0x74</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7669" name = "While" startDateTime = "2022-09-09T13:36:58.173"  endDateTime = "2022-09-09T13:36:58.173"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='7.1e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7670" name = "Get ID" startDateTime = "2022-09-09T13:36:58.183"  endDateTime = "2022-09-09T13:36:59.291"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0x74
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0x74
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "39" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.10786'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7671" name = "Read ID" startDateTime = "2022-09-09T13:36:59.303"  endDateTime = "2022-09-09T13:36:59.303"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.47e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7672" name = "Compare return value" startDateTime = "2022-09-09T13:36:59.307"  endDateTime = "2022-09-09T13:36:59.307"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='4.79e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Failed" />
+			<tr:TestResult ID = "tr-b75e5d07-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0x74</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7673" name = "While" startDateTime = "2022-09-09T13:36:59.324"  endDateTime = "2022-09-09T13:36:59.324"  testReferenceID="ID#:K1bcFfAu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ReportText">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x400000">
+							<c:Value><![CDATA[{looping} Locals.CURRENT_F <= Locals.MAX_F]]></c:Value>
+						</c:Datum>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Flow_While</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='8.39e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7674" name = "Get ID" startDateTime = "2022-09-09T13:36:59.330"  endDateTime = "2022-09-09T13:37:00.426"  testReferenceID="ID#:LEH3DvIu7RGufyzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "ExitCode">
+						<c:Datum value = "0" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Standard Output">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0x74
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "ID_TEXT">
+						<c:Datum xsi:type="ts:TS_string" flags = "0x2000">
+							<c:Value>ID:0x74
+
+
+</c:Value>
+						</c:Datum>
+					</c:Item>
+					<c:Item name = "Current Frequency">
+						<c:Datum value = "40" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>CallExecutable</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='1.09639'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "7675" name = "Read ID" startDateTime = "2022-09-09T13:37:00.437"  endDateTime = "2022-09-09T13:37:00.437"  testReferenceID="ID#:OvKwevMu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='5'/>
+					<ts:TotalTime value='3.45e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "7676" name = "Compare return value" startDateTime = "2022-09-09T13:37:00.440"  endDateTime = "2022-09-09T13:37:00.440"  testReferenceID="ID#:W1AjR/Uu7RGufyzwXeSNwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='1'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='5.27e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Failed" />
+			<tr:TestResult ID = "tr-b75e5d08-3033-11ed-ae80-2cf05de48dc0" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>0x74</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "CIEQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>0xEA</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "7678" name = "Display max frequency" startDateTime = "2022-09-09T13:37:00.464"  endDateTime = "2022-09-09T13:37:00.464"  testReferenceID="ID#:npjFhyMw7RGugCzwXeSNwA">
+			<tr:Data>
+				<c:Collection>
+					<c:Item name = "Max CPU Frequency">
+						<c:Datum value = "36" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+					<c:Item name = "Max SPI Frequency">
+						<c:Datum value = "18" xsi:type="ts:TS_double" flags = "0x2000"/>
+					</c:Item>
+				</c:Collection>
+			</tr:Data>
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='12'/>
+					<ts:TotalTime value='1.3e-05'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+	</tr:ResultSet>
+	<tr:TestProgram>
+		<c:SerialNumber>
+			DESKTOP-QU5D0NH
+		</c:SerialNumber>
+		<tr:Configuration>
+			<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+				<c:Item name = "IncludeTSExtensionElements">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeAttributes">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeLimits">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeMeasurements">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeArrayMeasurement">
+					<c:Datum value = "2" xsi:type="ts:TS_double" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ArrayMeasurementFilter">
+					<c:Datum value = "3" xsi:type="ts:TS_double" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ArrayMeasurementMax">
+					<c:Datum value = "100" xsi:type="ts:TS_double" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeTimes">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "Format">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>xml</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "NumericFormat">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>%$.13g</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "ResultFilterExpression">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>True</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "GeneratePath">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "UseTemporaryFile">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "UseSequenceFileNameAsPrefix">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "AddTimeAndDateToFileName">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "NewFileNameForEachUUT">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ForceFileNameToBeUnique">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "AppendToFileIfItExists">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "DirectoryType">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>SequenceFileDirectory</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "Directory">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "BaseName">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>Report</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "UseFormatForExtension">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "Extension">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "ReportFilePath">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "DisableReportGeneration">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeStepResults">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "BodyGenerator">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>DLL</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "SaveTransformedHtmlForXmlReport">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "Colors">
+					<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+						<c:Item name = "LabelBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FFFFFF</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "ValueBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#32FFFF</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "UUTSeparator">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#0000E0</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "HeaderSeparator">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#8000CC</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "TableBorder">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#000000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "MainBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#00C4C4</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "SetupBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF8000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "CleanupBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#ADD8E6</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "ReportTextBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF32CC</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Terminated">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#000080</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Failed">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF0000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Error">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF0000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Passed">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#008000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Skipped">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#B98028</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Done">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#008000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Running">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FFCC33</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "TerminatedBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#0000FF</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "FailedBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF0000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "ErrorBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF0000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "PassedBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#00FF00</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "SkippedBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FFFF00</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "DoneBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#00FFCC</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "RunningBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FFCC33</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "FailureStackLabelBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF2020</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "FailureStackValueBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#D0D0D0</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "BatchHeadingBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#00C4C4</c:Value>
+							</c:Datum>
+						</c:Item>
+					</c:Collection>
+				</c:Item>
+				<c:Item name = "DateAndTimeFormat">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>TimeFirst</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "NewFileNameForEachBatch">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "NewBatchFileNameForEachBatch">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "NewFileNameForEachTestSocket">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "StoreUUTReportWithBatchReport">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "BatchBaseName">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>BatchReport</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "LabelSize">
+					<c:Datum value = "26" xsi:type="ts:TS_double" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "RelStylesheetPath">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>tr5_horizontal.xsl</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "StylesheetPath">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>C:\Program Files\National Instruments\TestStand 2021\Components\Models\TestStandModels\ATML\StyleSheets\tr5_horizontal.xsl</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "StylesheetMRU">
+					<c:IndexedArray dimensions="[5]" lowerBounds="[0]" upperBounds="[4]" xsi:type="ts:TS_stringArray" flags = "0x0000">
+						<ts:Element position ="[0]">
+							<c:Value>horizontal.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[1]">
+							<c:Value>report.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[2]">
+							<c:Value>expand.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[3]">
+							<c:Value></c:Value>
+						</ts:Element>
+						<ts:Element position ="[4]">
+							<c:Value></c:Value>
+						</ts:Element>
+					</c:IndexedArray>
+				</c:Item>
+				<c:Item name = "ATMLStylesheetMRU">
+					<c:IndexedArray dimensions="[3]" lowerBounds="[0]" upperBounds="[2]" xsi:type="ts:TS_stringArray" flags = "0x0000">
+						<ts:Element position ="[0]">
+							<c:Value>TR_horizontal.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[1]">
+							<c:Value>trml.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[2]">
+							<c:Value></c:Value>
+						</ts:Element>
+					</c:IndexedArray>
+				</c:Item>
+				<c:Item name = "StoreStylesheetAbsolutePath">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "UseOnTheFlyReporting">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "PurgeOnTheFlyResults">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "GeneratePDFReport">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeStepResultComments">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "UseLocalizedDecimalPoint">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ReportStyle">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>atml5</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "ReportFileSequentialModelExpression">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>"$(ClientFileDir)\\$(ClientFileName)_Report[$(FileTime)][$(FileDate)]$(Unique).$(FileExtension)"</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "ReportFileParallelModelExpression">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>"$(ClientFileDir)\\$(ClientFileName)_Report[$(FileTime)][$(FileDate)]$(Unique).$(FileExtension)"</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "ReportFileBatchModelExpression">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>"$(ClientFileDir)\\$(ClientFileName)_BatchReport[$(FileTime)][$(FileDate)]$(Unique).$(FileExtension)"</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "BatchFileBatchModelExpression">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>"$(ClientFileDir)\\$(ClientFileName)_BatchReport[$(FileTime)][$(FileDate)]$(Unique).$(FileExtension)"</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "NewFileNameForEachUUTStatus">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ReportPathMacroListString">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "BatchReportPathMacroListString">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "CheckIfMacroListIsUnchanged">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ATML5StylesheetMRU">
+					<c:IndexedArray dimensions="[5]" lowerBounds="[0]" upperBounds="[4]" xsi:type="ts:TS_stringArray" flags = "0x0000">
+						<ts:Element position ="[0]">
+							<c:Value>tr5_horizontal.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[1]">
+							<c:Value>tr5_report.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[2]">
+							<c:Value>tr5_expand.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[3]">
+							<c:Value></c:Value>
+						</ts:Element>
+						<ts:Element position ="[4]">
+							<c:Value></c:Value>
+						</ts:Element>
+					</c:IndexedArray>
+				</c:Item>
+				<c:Item name = "Atml_Rpt_Options">
+					<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+						<c:Item name = "AddReportText">
+							<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+						</c:Item>
+						<c:Item name = "ExtensionDLLAbsolutePath">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value></c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "TestResultsSchemaPath">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value></c:Value>
+							</c:Datum>
+						</c:Item>
+					</c:Collection>
+				</c:Item>
+				<c:Item name = "ATML6StylesheetMRU">
+					<c:IndexedArray dimensions="[5]" lowerBounds="[0]" upperBounds="[4]" xsi:type="ts:TS_stringArray" flags = "0x0000">
+						<ts:Element position ="[0]">
+							<c:Value>tr6_horizontal.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[1]">
+							<c:Value>tr6_report.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[2]">
+							<c:Value>tr6_expand.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[3]">
+							<c:Value></c:Value>
+						</ts:Element>
+						<ts:Element position ="[4]">
+							<c:Value></c:Value>
+						</ts:Element>
+					</c:IndexedArray>
+				</c:Item>
+			</c:Collection>
+		</tr:Configuration>
+	</tr:TestProgram>
+	<tr:TestStation>
+		<c:SerialNumber>DESKTOP-QU5D0NH</c:SerialNumber>
+	</tr:TestStation>
+	<tr:UUT>
+		<c:SerialNumber>NONE</c:SerialNumber>
+	</tr:UUT>
+	<tr:Extension>
+		<ts:TSResultSetProperties>
+			<ts:NumOfResults value = '168'/>
+			<ts:CriticalFailureStack>
+				<ts:CriticalFailureStackEntry resultID="7664" stepName="Compare return value" sequenceName="MainSequence" sequenceFileName="SPI_speed_test_v2.seq"/>
+			</ts:CriticalFailureStack>
+		</ts:TSResultSetProperties>
+	</tr:Extension>
+</trc:TestResults>
+</trc:TestResultsCollection>
